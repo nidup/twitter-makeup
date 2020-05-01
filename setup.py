@@ -15,7 +15,8 @@ setup_args = dict(
     author_email='duponn@gmail.com',
     keywords=['Twitter', 'Profile', 'API'],
     url='https://github.com/nidup/twitter-makeup',
-    download_url='https://pypi.org/project/twitter-makeup'
+    download_url='https://pypi.org/project/twitter-makeup',
+    include_package_data=True
 )
 
 install_requires = [

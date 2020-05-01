@@ -1,0 +1,3 @@
+recursive-include ./data
+include tests.py
+exclude secrets.py

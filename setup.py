@@ -5,7 +5,7 @@ with open('README.md') as readme_file:
 
 setup_args = dict(
     name='twitter-makeup',
-    version='0.0.3',
+    version='0.0.4',
     description='Make up your twitter profile, from 🐴 to 🦄 !',
     long_description_content_type="text/markdown",
     long_description=README,

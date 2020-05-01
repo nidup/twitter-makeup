@@ -42,3 +42,5 @@ if False:
 \n💬 and 📝 about product, engineering, teamwork, learnings"
     makeup.change_profile_description(profile_description)
     print('Profile description has been changed by "' + profile_description + '" 🦄')
+
+print('You have to uncomment tests in tests.py, be careful to not publish test data on your profile 🐴')

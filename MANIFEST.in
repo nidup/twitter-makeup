@@ -1,3 +1,2 @@
-recursive-include ./data
+include ./data/*.jpg
 include tests.py
-exclude secrets.py

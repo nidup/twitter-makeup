@@ -1,0 +1,6 @@
+.pyc
+__pycache__
+twitter_makeup.egg-info
+build
+dist
+secrets.py

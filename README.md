@@ -1,2 +1,3 @@
-# twitter-profile-make-up
-Make up your Twitter Profile. From 🐴 to 🦄
+# Make up your Twitter Profile!
+
+Small library to make up your twitter profile, from 🐴 to 🦄 !

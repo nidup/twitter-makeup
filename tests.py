@@ -12,14 +12,14 @@ api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True, 
 makeup = MakeUp(api)
 
 if False:
-    banner_path = 'images/banner-night.jpg'
-    banner_path = 'images/banner-morning.jpg'
+    banner_path = 'data/banner-night.jpg'
+    banner_path = 'data/banner-morning.jpg'
     makeup.change_banner_picture(banner_path)
     print('Banner picture has been changed using "'+ banner_path + '" 🦄')
 
 if False:
-    profile_path = 'images/profile-weekend.jpg'
-    profile_path = 'images/profile-week.jpg'
+    profile_path = 'data/profile-weekend.jpg'
+    profile_path = 'data/profile-week.jpg'
     makeup.change_profile_picture(profile_path)
     print('Profile picture has been changed using "'+ profile_path + '" 🦄')
 

@@ -10,8 +10,8 @@ You can see it live on my [Twitter profile](https://twitter.com/duponico) 🐦
 
 Example                                         | Result
 ----------------------------------------------- | ------------------------------
-Change the banner for the day                   | ![alt text](./data/banner-morning.jpg "Morning banner")
-And the night                                   | ![alt text](./data/banner-night.jpg "Night banner")
+Change the banner for the day                   | ![alt text](https://raw.githubusercontent.com/nidup/twitter-makeup/master/data/banner-morning.jpg "Morning banner")
+And the night                                   | ![alt text](https://raw.githubusercontent.com/nidup/twitter-makeup/master/data/banner-night.jpg "Night banner")
 Change your display name the morning            | Nico ☕
 And during the day                              | Nico 💻
 And for the night                               | Nico 😴

@@ -12,14 +12,14 @@ api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True, 
 makeup = MakeUp(api)
 
 if False:
-    banner_path = 'data/banner-night.jpg'
-    banner_path = 'data/banner-morning.jpg'
+    banner_path = 'images/banner-night.jpg'
+    banner_path = 'images/banner-morning.jpg'
     makeup.change_banner_picture(banner_path)
     print('Banner picture has been changed using "'+ banner_path + '" 🦄')
 
 if False:
-    profile_path = 'data/profile-xmas.jpg'
-    profile_path = 'data/profile-regular.jpg'
+    profile_path = 'images/profile-weekend.jpg'
+    profile_path = 'images/profile-week.jpg'
     makeup.change_profile_picture(profile_path)
     print('Profile picture has been changed using "'+ profile_path + '" 🦄')
 
@@ -43,4 +43,4 @@ if False:
     makeup.change_profile_description(profile_description)
     print('Profile description has been changed by "' + profile_description + '" 🦄')
 
-print('You have to uncomment tests in tests.py, be careful to not publish test data on your profile 🐴')
+print('You have to uncomment tests in tests.py, be careful to not publish test images on your profile 🐴')

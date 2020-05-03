@@ -1,6 +1,22 @@
-# Make up your Twitter Profile!
+# Make up your Twitter Profile! [python package]
 
 Small library to make up your twitter profile, from 🐴 to 🦄 !
+
+Here is a [dedicated docker service](https://github.com/nidup/twitter-makeup-service) including a scheduler to use it directly without any development work.
+
+You can see it live on my [Twitter profile](https://twitter.com/duponico) 🐦
+
+## Examples 🦄
+
+Example                                         | Result
+----------------------------------------------- | ------------------------------
+Change the banner for the day                   | ![alt text](./data/banner-morning.jpg "Morning banner")
+And the night                                   | ![alt text](./data/banner-night.jpg "Night banner")
+Change your display name the morning            | Nico ☕
+And during the day                              | Nico 💻
+And for the night                               | Nico 😴
+Change your location when traveling             | Boston
+Change your description when attending an event | Currently at #craftconf, let's have a chat 💬
 
 ## Install 📦
 
@@ -15,7 +31,6 @@ Twitter MakeUp allows to programmatically change your profile on your behalf.
 To configure it, you need to generate Twitter credentials.
 
 [Follow the Twitter guide (OAuth 1.0a)](https://developer.twitter.com/en/docs/basics/authentication/overview).
-
 
 ## Use it! 🦄
 
@@ -36,26 +51,21 @@ api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True, 
 makeup = MakeUp(api)
 
 # Change your banner 
-banner_path = 'data/banner-night.jpg'
-banner_path = 'data/banner-morning.jpg'
+banner_path = 'images/banner-night.jpg'
 makeup.change_banner_picture(banner_path)
 print('Banner picture has been changed using "'+ banner_path + '" 🦄')
 
 # Change your profile picture
-profile_path = 'data/profile-xmas.jpg'
-profile_path = 'data/profile-regular.jpg'
+profile_path = 'images/profile-weekend.jpg'
 makeup.change_profile_picture(profile_path)
 print('Profile picture has been changed using "'+ profile_path + '" 🦄')
 
 # Change your profile name
-profile_name = 'Nicolas Dupont 💻'
 profile_name = 'Nicolas Dupont ☕'
-profile_name = 'Nicolas Dupont 📝'
 makeup.change_profile_name(profile_name)
 print('Profile name has been changed by "' + profile_name + '" 🦄')
 
 # Change your profile location
-profile_location = 'Boston'
 profile_location = 'Nantes'
 makeup.change_profile_location(profile_location)
 print('Profile location has been changed by "' + profile_location + '" 🦄')
@@ -74,4 +84,4 @@ print('Profile description has been changed by "' + profile_description + '" �
 
 ## Third party
 
-This library uses the excellent [Tweepy](https://www.tweepy.org/), providing a small wrapper around a small subset of Tweepy capabilities.
+This library uses the excellent [Tweepy](https://www.tweepy.org/), providing a wrapper around a small subset of Tweepy capabilities.
